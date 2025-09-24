@@ -1,0 +1,463 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0d001f;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #0d001f;
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  color: #d1c4e9;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  padding: 100px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 85px; /* atur jaraknya di sini */
+}
+
+.profile-pic img {
+  width: 250px; /* bisa sesuaikan ukuran foto */
+  border-radius: 50%;
+}
+
+
+.text {
+  flex: 1; /* teks mengambil sisa ruang */
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #a259ff;
+  font-weight: bold;
+}
+
+.big {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.cover {
+  color: #5ce1e6;
+  text-decoration: underline;
+}
+
+.subtext {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.degree {
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+
+.highlight-small {
+  color: #a259ff;
+}
+
+.desc {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* Profile Pic */
+.profile-pic img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 3px solid #a259ff;
+  box-shadow: 0 0 40px #a259ff;
+}
+
+/* What I Do Section */
+.what-i-do {
+  padding: 80px 60px;
+  text-align: left;
+  color: white;
+}
+
+.what-i-do h2 {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: linear-gradient(145deg, rgba(162, 89, 255, 0.2), rgba(92, 225, 230, 0.1));
+  border: 1px solid rgba(162, 89, 255, 0.3);
+  padding: 25px 30px;
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(162, 89, 255, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px rgba(92, 225, 230, 0.5);
+}
+
+.card h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #b8b8b8;
+  line-height: 1.4;
+}
+
+.card .icon {
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 80px 60px;
+  color: white;
+}
+
+.portfolio h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  gap: 40px;
+}
+
+.project.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-text {
+  flex: 1;
+}
+
+.project-text h3 {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.project-text h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.project-text p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.btn-prototype {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #a259ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.project-images {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-images img {
+  max-width: 180px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(162, 89, 255, 0.3);
+}
+
+/* Certificates Section */
+.certificates {
+  padding: 80px 60px;
+  color: white;
+}
+
+.certificates h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.certificate-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.certificate-slider img {
+  flex: 0 0 auto;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(162, 89, 255, 0.3);
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+
+.certificate-slider img:hover {
+  transform: scale(1.05);
+}
+
+/* Volunteer Section */
+.volunteer {
+  padding: 80px 60px;
+  color: white;
+}
+
+.volunteer h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.volunteer-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;     /* bisa di-slide horizontal */
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.volunteer-card {
+  flex: 0 0 auto;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  scroll-snap-align: start;
+  box-shadow: 0 0 15px rgba(162, 89, 255, 0.25);
+}
+
+.volunteer-images {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.volunteer-images img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Untuk card dengan 2 foto */
+.volunteer-images.two-images {
+  gap: 6px; /* biar jaraknya lebih kecil */
+}
+
+.volunteer-images.two-images img {
+  width: 49%;   /* dilebarin, hampir setengah card */
+  border-radius: 10px;
+}
+
+/* Judul dan tanggal */
+.volunteer-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.volunteer-card .date {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+
+/* Competition Section */
+.competition {
+  padding: 80px 60px;
+  color: white;
+}
+
+.competition h2 {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.competition-group {
+  margin-bottom: 50px;
+}
+
+.competition-group h3 {
+  margin-left: 5px;
+}
+
+.competition-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.competition-card {
+  flex: 0 0 auto;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  scroll-snap-align: start;
+  box-shadow: 0 0 15px rgba(162, 89, 255, 0.25);
+}
+
+.competition-images {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.competition-images img {
+  max-width: 100%;
+  height: auto;         /* biar menyesuaikan proporsi gambar */
+  border-radius: 12px;
+  object-fit: contain;  /* jangan dipotong, tapi tetap sesuai */
+  background: #111;     /* kasih background biar rapi */
+  padding: 5px;         /* jarak kecil biar kayak bingkai */
+  box-sizing: border-box;
+}
+
+.competition-images.two-images img {
+  width: calc(50% - 5px); /* biar 2 foto sejajar proporsional */
+}
+.competition-images.three-images img {
+  width: 33.3%;
+}
+
+.competition-card .desc {
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+/* Figma Design Slider Section */
+.figma-slider {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 80px 60px;
+}
+
+.project-card {
+  flex: 0 0 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  scroll-snap-align: start;
+}
+
+.project-card .figma-content {
+  max-width: 45%;
+}
+
+.project-card .figma-images {
+  display: flex;
+  gap: 20px;
+}
+
+.project-card .figma-images img {
+  max-width: 200px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(162, 89, 255, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.project-card .figma-images img:hover {
+  transform: scale(1.05);
+}
+
+
+.nav-links li a {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* jarak antara logo dan teks */
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.cards .card {
+  display: block;
+  text-decoration: none; /* hilangkan garis bawah */
+  color: inherit;        /* tetap gunakan warna teks asli */
+  cursor: pointer;
+}
