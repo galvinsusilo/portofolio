@@ -461,3 +461,12 @@ body {
   color: inherit;        /* tetap gunakan warna teks asli */
   cursor: pointer;
 }
+
+.tag {
+  background-color: #4A87F7;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  margin-left: 6px;
+}
